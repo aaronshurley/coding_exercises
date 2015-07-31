@@ -7,10 +7,10 @@ second_sum = 0
 
 i = 0
 while i < size
-  vals = gets.split(" ").map { |val| val.to_i }
+  vals = gets.split(" ").map.(&:to_i)
   first_sum += vals[i]
   second_sum += vals[size - 1 - i]
-  
+
   i += 1
 end
 
